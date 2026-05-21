@@ -34,7 +34,7 @@ export function SectionEmployeeVsCoworker() {
           </CardHeader>
           <CardContent className="space-y-3">
             <p className="text-sm font-medium text-[#0176D3]">
-              &ldquo;ChatGPT for Salesforce + Data Cloud + Slack&rdquo;
+              &ldquo;Conversational Experience for Salesforce + Data Cloud + Slack&rdquo;
             </p>
             <ul className="space-y-2 text-sm text-muted-foreground">
               <li className="flex items-start gap-2">

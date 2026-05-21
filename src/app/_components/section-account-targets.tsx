@@ -15,7 +15,7 @@ const tiers = [
     title: "A1 Sales / A4 Sales",
     subtitle: "Go now",
     description:
-      "These customers bought Agentforce expecting \"ChatGPT for Salesforce\" and got Employee Agents (on-rails, guided). They're frustrated because the product didn't match their expectation. Coworker IS what they thought they were buying.",
+      "These customers bought Agentforce expecting a \"Conversational Experience for Salesforce\" and got Employee Agents (on-rails, guided). They're frustrated because the product didn't match their expectation. Coworker IS what they thought they were buying.",
     action: "Turn it on. Solve the frustration. Inform their next agent builds.",
     color: "blue" as const,
   },

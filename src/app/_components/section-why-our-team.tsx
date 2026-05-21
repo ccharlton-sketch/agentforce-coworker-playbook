@@ -51,10 +51,10 @@ const reasons = [
 export function SectionWhyOurTeam() {
   return (
     <SectionWrapper id="why-our-team" internal>
-      <h2 className="text-3xl font-bold mb-2">Why Our Team Is the Right One to Lean In</h2>
+      <h2 className="text-3xl font-bold mb-2">How the Agentforce Team Helps This Conversation</h2>
       <p className="text-muted-foreground mb-8">
-        We&apos;ve experienced the Employee Agent frustrations firsthand. We can handle the delicate conversation
-        around using Coworker in tandem — and this still drives consumption.
+        We&apos;ve experienced the Employee Agent frustrations firsthand. We navigate the delicate conversation
+        around using Coworker in tandem — driving consumption from Coworker itself and eventually the customer&apos;s second agent.
       </p>
 
       <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
