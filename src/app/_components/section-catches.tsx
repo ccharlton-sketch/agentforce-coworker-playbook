@@ -34,16 +34,16 @@ const catches = [
   },
   {
     icon: Eye,
-    title: "Observability Unknown",
+    title: "Observability — Coming via Agentforce Observability",
     description:
-      "We still don't have a clear story on observability for Coworker. Customers who need detailed audit trails or usage analytics will ask — and we don't have a great answer yet.",
+      "Coworker will be built into Agentforce Observability, which is a positive. However, we don't yet know what that experience looks like in practice. Customers who need detailed audit trails or usage analytics will ask — acknowledge it's coming but set expectations that details are TBD.",
     severity: "medium" as const,
   },
   {
     icon: DollarSign,
     title: "Cost Risk for Non-A1/A4X",
     description:
-      "Flex-only customers could lose control of consumption costs. Use Coworker as a driver toward committed SKUs, not a standalone play.",
+      "Pricing will be based on flex credit/token usage rather than per-action, which gives more flexibility. But flex-only customers can still blow through consumption quickly. Use Coworker as a driver toward committed SKUs, not a standalone play.",
     severity: "medium" as const,
   },
   {

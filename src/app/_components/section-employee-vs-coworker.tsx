@@ -99,7 +99,7 @@ export function SectionEmployeeVsCoworker() {
       </div>
 
       {/* The key insight */}
-      <div className="rounded-lg bg-muted/50 p-6 border">
+      <div className="mb-10 rounded-lg bg-muted/50 p-6 border">
         <h3 className="font-semibold mb-3">The Key Insight for Customers</h3>
         <div className="space-y-3 text-sm text-muted-foreground">
           <p>
@@ -119,6 +119,54 @@ export function SectionEmployeeVsCoworker() {
             flex them.&rdquo;
           </p>
         </div>
+      </div>
+
+      {/* When Coworker isn't the right fit */}
+      <div className="rounded-xl border border-amber-500/30 bg-amber-50/50 dark:bg-amber-950/10 p-6 md:p-8">
+        <h3 className="font-semibold text-lg mb-3">
+          When Coworker Isn&apos;t the Right Play (And That&apos;s OK)
+        </h3>
+        <p className="text-sm text-muted-foreground mb-4">
+          Coworker respects user roles and permissions — it&apos;s not unfettered
+          access. But some orgs haven&apos;t fully implemented those controls through
+          profiles, permission sets, and field-level security. Until that
+          foundation is solid, Coworker may expose more than intended.
+        </p>
+        <div className="space-y-3 text-sm text-muted-foreground">
+          <div className="flex items-start gap-2">
+            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-amber-500 shrink-0" />
+            <p>
+              <strong className="text-foreground">Permissions not fully configured:</strong>{" "}
+              Coworker honors roles and FLS, but many orgs rely on UI-level hiding
+              or tribal knowledge rather than proper field-level security. That
+              gap becomes visible with conversational AI.
+            </p>
+          </div>
+          <div className="flex items-start gap-2">
+            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-amber-500 shrink-0" />
+            <p>
+              <strong className="text-foreground">Org readiness:</strong>{" "}
+              If an org&apos;s data model, permissions, or metadata aren&apos;t structured
+              to support open-ended AI access, the conversation becomes about
+              getting AI-ready — which is valuable work in itself.
+            </p>
+          </div>
+          <div className="flex items-start gap-2">
+            <span className="mt-1 h-1.5 w-1.5 rounded-full bg-amber-500 shrink-0" />
+            <p>
+              <strong className="text-foreground">Predictability over flexibility:</strong>{" "}
+              Some teams need deterministic, on-rails workflows — not open-ended
+              exploration. Employee Agents deliver exactly that.
+            </p>
+          </div>
+        </div>
+        <p className="text-sm text-muted-foreground mt-4 pt-4 border-t border-amber-500/20">
+          <strong className="text-foreground">The play here:</strong>{" "}
+          Employee Agents remain the answer for customers who want Agentforce use
+          cases that are predictable, scoped, and deterministic. Help these
+          customers get their org and data AI-ready so Coworker becomes viable
+          down the road.
+        </p>
       </div>
     </SectionWrapper>
   );
