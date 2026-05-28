@@ -48,9 +48,9 @@ const catches = [
   },
   {
     icon: AlertTriangle,
-    title: "Context Windows & LLM Knowledge Needed",
+    title: "Context Window & LLM Details",
     description:
-      "Our team needs internal expertise on underlying LLMs and token limits to consult properly and troubleshoot. This isn't customer-facing but it's critical for us.",
+      "Coworker is believed to have a 200k token context window and runs on Claude as the underlying LLM. There is currently no ability to adjust or swap the LLM behind the scenes, though it is roadmapped. Our team needs awareness of these constraints to consult and troubleshoot properly.",
     severity: "low" as const,
   },
   {
@@ -72,6 +72,9 @@ export function SectionCatches() {
   return (
     <SectionWrapper id="catches" internal>
       <h2 className="text-3xl font-bold mb-2">Catches & Gotchas</h2>
+      <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
+        Last updated: May 27, 2026
+      </p>
       <p className="text-muted-foreground mb-8">
         What to know before the customer conversation. Set expectations early —
         don&apos;t let the deck oversell.
