@@ -7,16 +7,11 @@ import { SectionBenefits } from "./_components/section-benefits";
 import { SectionCatches } from "./_components/section-catches";
 import { SectionRoadmap } from "./_components/section-roadmap";
 
-interface PageProps {
-  searchParams: Promise<{ view?: string }>;
-}
+export const dynamic = "force-static";
 
-export default async function CoworkerPlaybookPage({ searchParams }: PageProps) {
-  const params = await searchParams;
-  const hideInternal = params.view === "external";
-
+export default function CoworkerPlaybookPage() {
   return (
-    <PlaybookShell hideInternal={hideInternal}>
+    <PlaybookShell>
       <SectionHero />
       <SectionWhyOurTeam />
       <SectionEmployeeVsCoworker />
