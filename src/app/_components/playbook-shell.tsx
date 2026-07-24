@@ -15,12 +15,16 @@ const sectionIds = [
 
 interface PlaybookShellProps {
   children: React.ReactNode;
-  hideInternal?: boolean;
 }
 
-export function PlaybookShell({ children, hideInternal = false }: PlaybookShellProps) {
+export function PlaybookShell({ children }: PlaybookShellProps) {
   const [activeSection, setActiveSection] = useState("hero");
+  const [hideInternal, setHideInternal] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
+
+  useEffect(() => {
+    setHideInternal(new URLSearchParams(window.location.search).get("view") === "external");
+  }, []);
 
   useEffect(() => {
     observerRef.current = new IntersectionObserver(
