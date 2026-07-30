@@ -87,7 +87,7 @@ export function SectionEmployeeVsCoworker() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-purple-500 shrink-0" />
-                Called by Coworker — users don&apos;t interact directly
+                Called by Coworker or interacted with directly
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-purple-500 shrink-0" />
