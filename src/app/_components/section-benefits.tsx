@@ -62,9 +62,7 @@ export function SectionBenefits() {
                 <h3 className="font-semibold text-lg mb-2">The New Expectation</h3>
                 <p className="text-muted-foreground">
                   Users are now conditioned by ChatGPT, Claude, Gemini, and other consumer AI tools.
-                  When they ask a question, want to resolve something, or need to do something, they expect
-                  a <strong>99% success rate</strong> — the tool gives its best answer almost every time.
-                  That's the bar.
+                  When they ask a question, want to resolve something, or need to do something, they <strong>expect the tool to try</strong> — not an error message, not "I can't help with that." The tool gives its best answer. That's the bar.
                 </p>
               </div>
             </div>
