@@ -1,24 +1,33 @@
 "use client";
 
-import { Lock, Menu, X } from "lucide-react";
+import { Menu, X, ChevronLeft } from "lucide-react";
 import { useState } from "react";
 
 const sections = [
-  { id: "hero", label: "Overview", internal: false },
-  { id: "why-our-team", label: "Why Our Team", internal: true },
-  { id: "employee-vs-coworker", label: "Agents vs. Coworker", internal: false },
-  { id: "account-targets", label: "Account Targets", internal: true },
-  { id: "benefits", label: "Benefits", internal: false },
-  { id: "catches", label: "Catches", internal: true },
-  { id: "roadmap", label: "Roadmap", internal: false },
+  { id: "hero", label: "Overview" },
+  { id: "august-4-alert", label: "August 4 Auto-Enable" },
+  { id: "employee-vs-coworker", label: "Agents vs. Coworker" },
+  { id: "account-targets", label: "Account Targets" },
+  { id: "benefits", label: "Why Customers Care" },
+  { id: "objections", label: "Common Objections" },
+  { id: "catches", label: "Catches" },
+  { id: "roadmap", label: "Roadmap" },
 ];
 
 interface StickyNavProps {
   activeSection: string;
+  onSidebarToggle?: (hidden: boolean) => void;
 }
 
-export function StickyNav({ activeSection }: StickyNavProps) {
+export function StickyNav({ activeSection, onSidebarToggle }: StickyNavProps) {
   const [mobileOpen, setMobileOpen] = useState(false);
+  const [desktopHidden, setDesktopHidden] = useState(false);
+
+  const toggleDesktopSidebar = () => {
+    const newState = !desktopHidden;
+    setDesktopHidden(newState);
+    onSidebarToggle?.(newState);
+  };
 
   return (
     <>
@@ -31,11 +40,22 @@ export function StickyNav({ activeSection }: StickyNavProps) {
         {mobileOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
       </button>
 
+      {/* Desktop show/hide toggle */}
+      <button
+        onClick={toggleDesktopSidebar}
+        className={`hidden lg:block fixed top-4 z-50 p-2 rounded-lg bg-white shadow-md border transition-all duration-200 ${
+          desktopHidden ? "left-4" : "left-64"
+        }`}
+        aria-label="Toggle sidebar"
+      >
+        {desktopHidden ? <Menu className="h-5 w-5" /> : <ChevronLeft className="h-5 w-5" />}
+      </button>
+
       {/* Navigation */}
       <nav
         className={`fixed top-0 left-0 h-full w-60 bg-white border-r shadow-sm z-40 pt-20 px-4 transition-transform duration-200 ${
           mobileOpen ? "translate-x-0" : "-translate-x-full"
-        } lg:translate-x-0`}
+        } ${desktopHidden ? "lg:-translate-x-full" : "lg:translate-x-0"}`}
       >
         <div className="mb-6">
           <h2 className="text-xs font-semibold uppercase tracking-wider text-muted-foreground">
@@ -54,9 +74,6 @@ export function StickyNav({ activeSection }: StickyNavProps) {
                     : "text-muted-foreground hover:text-foreground hover:bg-muted"
                 }`}
               >
-                {section.internal && (
-                  <Lock className="h-3 w-3 text-amber-500 shrink-0" />
-                )}
                 <span>{section.label}</span>
               </a>
             </li>

@@ -15,28 +15,22 @@ const roadmapData = [
       "Intelligent Context + Enriched Metadata Graph",
       "Multi-step reasoning",
       "Prompt suggestions",
+      "Microsoft Teams (Pilot) — Nominate customers to surface Coworker in Teams and query Salesforce data + delegate to agents without leaving Teams",
     ],
   },
   {
-    date: "July 2026",
+    date: "Aug 2026",
     status: "upcoming" as const,
-    title: "July 2026",
+    title: "August 2026 (Potential/Slated)",
     items: [
-      "Microsoft Teams surface",
       "Web / Experience portals",
       "Web Search",
       "Federated Search Tools",
       "Notebooks",
       "Data QnA",
       "Employee Activity Graph",
-      "Daily Digest",
+      "Daily Digest (proactive insights delivered to you)",
     ],
-  },
-  {
-    date: "Aug 2026",
-    status: "upcoming" as const,
-    title: "August 2026",
-    items: ["Daily Digest (proactive insights delivered to you)"],
   },
   {
     date: "Oct 2026 (Dreamforce)",
@@ -50,14 +44,18 @@ const roadmapData = [
       "Ambient Insights (User, Page & App Context)",
       "Co-Work (collaborative AI sessions)",
       "Self-learn tasks",
+      "Microsoft Teams — Ground Coworker with Teams conversations and files (separate from the pilot above)",
     ],
   },
 ];
 
 export function SectionRoadmap() {
   return (
-    <SectionWrapper id="roadmap">
+    <SectionWrapper id="roadmap" alternate>
       <h2 className="text-3xl font-bold mb-2">Roadmap</h2>
+      <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
+        Last updated: July 30, 2026
+      </p>
       <p className="text-muted-foreground mb-8">
         What&apos;s real today vs. what&apos;s coming. Set customer expectations accordingly.
       </p>

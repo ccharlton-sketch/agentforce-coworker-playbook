@@ -70,7 +70,7 @@ const decisions = [
 
 export function SectionAccountTargets() {
   return (
-    <SectionWrapper id="account-targets" internal>
+    <SectionWrapper id="account-targets" alternate>
       <h2 className="text-3xl font-bold mb-2">Account Targets</h2>
       <p className="text-muted-foreground mb-8">
         Everyone with the right SKU is fair game — but priority matters.

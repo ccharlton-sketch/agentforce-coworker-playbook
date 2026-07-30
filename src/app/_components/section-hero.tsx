@@ -35,11 +35,11 @@ export function SectionHero() {
         </p>
 
         <div className="mt-10 flex flex-wrap gap-4 text-sm text-white/60">
-          <span>7 sections</span>
+          <span>8 sections</span>
           <span className="text-white/30">|</span>
           <span>Internal + customer-shareable</span>
           <span className="text-white/30">|</span>
-          <span>Updated May 2026</span>
+          <span>Updated July 2026</span>
         </div>
       </div>
     </section>

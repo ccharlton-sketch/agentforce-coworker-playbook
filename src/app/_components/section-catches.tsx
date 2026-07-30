@@ -47,6 +47,13 @@ const catches = [
     severity: "medium" as const,
   },
   {
+    icon: DollarSign,
+    title: "Data Cloud DMO Setup Has Upfront Consumption Cost",
+    description:
+      "While Data Cloud querying through Coworker is unmetered for A1E/A4X, setting up and attaching a Data Cloud DMO (Data Model Object) triggers an upfront consumption cost. This is due to creating a search index on that DMO, which processes and indexes the data to make it searchable by Coworker. This includes zero-copy data from sources like Databricks, Snowflake, etc. Set expectations that initial indexing will consume credits even on unmetered SKUs.",
+    severity: "medium" as const,
+  },
+  {
     icon: AlertTriangle,
     title: "Context Window & LLM Details",
     description:
@@ -70,10 +77,10 @@ const severityStyles = {
 
 export function SectionCatches() {
   return (
-    <SectionWrapper id="catches" internal>
+    <SectionWrapper id="catches" alternate>
       <h2 className="text-3xl font-bold mb-2">Catches & Gotchas</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: May 27, 2026
+        Last updated: July 30, 2026
       </p>
       <p className="text-muted-foreground mb-8">
         What to know before the customer conversation. Set expectations early —

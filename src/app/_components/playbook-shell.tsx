@@ -5,10 +5,11 @@ import { StickyNav } from "./sticky-nav";
 
 const sectionIds = [
   "hero",
-  "why-our-team",
+  "august-4-alert",
   "employee-vs-coworker",
   "account-targets",
   "benefits",
+  "objections",
   "catches",
   "roadmap",
 ];
@@ -20,6 +21,7 @@ interface PlaybookShellProps {
 export function PlaybookShell({ children }: PlaybookShellProps) {
   const [activeSection, setActiveSection] = useState("hero");
   const [hideInternal, setHideInternal] = useState(false);
+  const [sidebarHidden, setSidebarHidden] = useState(false);
   const observerRef = useRef<IntersectionObserver | null>(null);
 
   useEffect(() => {
@@ -48,8 +50,11 @@ export function PlaybookShell({ children }: PlaybookShellProps) {
 
   return (
     <div className={hideInternal ? "hide-internal" : ""}>
-      <StickyNav activeSection={activeSection} />
-      <main className="lg:ml-60">
+      <StickyNav
+        activeSection={activeSection}
+        onSidebarToggle={setSidebarHidden}
+      />
+      <main className={`transition-all duration-200 ${sidebarHidden ? "lg:ml-0" : "lg:ml-60"}`}>
         <div className="scroll-smooth">{children}</div>
       </main>
 
