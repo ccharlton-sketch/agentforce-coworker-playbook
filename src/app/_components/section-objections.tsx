@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SectionWrapper } from "./section-wrapper";
-import { AlertCircle, Settings, DollarSign, Lock, MessageSquare, Search, Zap, Edit, Network } from "lucide-react";
+import { AlertCircle, Settings, DollarSign, Lock, MessageSquare, Search, Zap, Edit, Network, BarChart } from "lucide-react";
 
 const objections = [
   {
@@ -38,6 +38,23 @@ const objections = [
     objection: '"It\'s still in beta — should we just wait for GA?"',
     response:
       "The beta tag doesn't mean it's unstable. Coworker is live and fully capable — customers should not experience breakages or problems with the standard Coworker/enterprise search experience. What's coming in GA are more surfaces (Teams, web portals, desktop app) and additional connectors. At its core, the product is working far better than you'd expect from a typical beta. Auto-enablement starts August 4, 2026, so now is the time to turn it on, train champions, and build internal adoption.",
+  },
+  {
+    icon: BarChart,
+    objection: '"How do I track or report on Coworker usage?"',
+    response: (
+      <>
+        Reporting is not yet a part of the Agentforce observability out-of-the-box dashboards. It will be built into Data Cloud session and intents in Agentforce Observability. In the meantime, our team has developed a reporting tool with queries and step-by-step instructions on using the STDM to get the analytics you need.{" "}
+        <a
+          href="https://ai-reporting-1d24e812f835.herokuapp.com/#usage"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-[#0176D3] hover:underline font-medium"
+        >
+          Access the guide here
+        </a>.
+      </>
+    ),
   },
 ];
 

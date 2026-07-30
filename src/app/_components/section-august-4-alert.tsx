@@ -113,6 +113,16 @@ export function SectionAugust4Alert() {
         <ul className="space-y-1 text-sm">
           <li>
             <a
+              href="https://help.salesforce.com/s/articleView?id=005388192&type=1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              ❓ August 4 Auto-Enablement FAQ
+            </a>
+          </li>
+          <li>
+            <a
               href="https://developer.salesforce.com/docs/data/ask-agentforce/guide/ask-agentforce-a-setup-home.html#set-up-ask-agentforce-beta"
               target="_blank"
               rel="noopener noreferrer"
