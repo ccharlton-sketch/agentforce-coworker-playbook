@@ -60,7 +60,7 @@ export function SectionBenefits() {
               </div>
               <div>
                 <h3 className="font-semibold text-lg mb-2">The new expectation</h3>
-<parameter name="text-muted-foreground">
+                <p className="text-muted-foreground">
                   Users are conditioned by ChatGPT, Claude, Gemini, and other consumer AI tools.
                   When they ask a question or want to resolve something, they <strong>expect the tool to try</strong>, not throw an error message or say "I can't help with that." The tool gives its best answer. That's the bar.
                 </p>
