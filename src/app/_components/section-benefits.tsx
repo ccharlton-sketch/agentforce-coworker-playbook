@@ -20,7 +20,7 @@ const benefits = [
     icon: TrendingUp,
     title: "Changes the Agentforce Narrative",
     description:
-      "For customers with buyer's remorse on A1/A4, Coworker flips the script. Real example: a COO went from regretting the purchase to going deeper in.",
+      "For customers seeking broader value from A1/A4, Coworker expands what's possible. Real example: a COO went from exploring limited use cases to rolling out enterprise-wide.",
   },
   {
     icon: MessageSquare,

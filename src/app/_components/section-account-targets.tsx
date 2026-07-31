@@ -15,8 +15,8 @@ const tiers = [
     title: "A1 Sales / A4 Sales",
     subtitle: "Go now",
     description:
-      "These customers bought Agentforce expecting a \"Conversational Experience for Salesforce\" and got Employee Agents (on-rails, guided). They're frustrated because the product didn't match their expectation. Coworker IS what they thought they were buying.",
-    action: "Turn it on. Solve the frustration. Inform their next agent builds.",
+      "These customers bought Agentforce looking for a \"Conversational Experience for Salesforce\" and started with Employee Agents (on-rails, guided). Coworker delivers the open-ended conversational layer they've been asking for.",
+    action: "Turn it on. Show the full vision. Inform their next agent builds.",
     color: "blue" as const,
   },
   {
@@ -24,7 +24,7 @@ const tiers = [
     title: "Pre-commits",
     subtitle: "Handle with care",
     description:
-      "Enable Coworker, but the consumption-only conversation needs delicacy. These users are already frustrated with the tool — Coworker can change the narrative.",
+      "Enable Coworker, but the consumption-only conversation needs delicacy. These users are still exploring the platform — Coworker can show what's possible and shift the conversation toward value.",
     action:
       "Enable carefully. Address consumption implications upfront.",
     color: "teal" as const,
