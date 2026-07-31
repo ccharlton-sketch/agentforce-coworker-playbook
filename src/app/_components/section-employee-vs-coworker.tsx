@@ -8,7 +8,7 @@ export function SectionEmployeeVsCoworker() {
         Employee Agents vs. Agentforce Coworker
       </h2>
       <p className="text-muted-foreground mb-8">
-        The #1 question from customers. Here&apos;s the definitive answer.
+        The #1 question from customers.
       </p>
 
       {/* Key framing callout */}
@@ -100,16 +100,16 @@ export function SectionEmployeeVsCoworker() {
 
       {/* The key insight */}
       <div className="mb-10 rounded-lg bg-muted/50 p-6 border">
-        <h3 className="font-semibold mb-3">The Key Insight for Customers</h3>
+        <h3 className="font-semibold mb-3">The key insight for customers</h3>
         <div className="space-y-3 text-sm text-muted-foreground">
           <p>
             <strong className="text-foreground">Without Employee Agents:</strong>{" "}
-            Coworker is smart search + summarization (Find + Catch Up). It can
+            Coworker is search plus summarization (Find + Catch Up). It can
             answer questions and surface information, but can&apos;t take action.
           </p>
           <p>
             <strong className="text-foreground">With Employee Agents:</strong>{" "}
-            Coworker becomes the full autonomous loop (Find + Catch Up + Plan &
+            Coworker can complete the full loop (Find + Catch Up + Plan &
             Act). Actions and record updates are locked behind Employee Agents
             that Coworker calls.
           </p>
@@ -124,10 +124,10 @@ export function SectionEmployeeVsCoworker() {
       {/* When Coworker isn't the right fit */}
       <div className="rounded-xl border border-amber-500/30 bg-amber-50/50 dark:bg-amber-950/10 p-6 md:p-8">
         <h3 className="font-semibold text-lg mb-3">
-          When Coworker Isn&apos;t the Right Play (And That&apos;s OK)
+          When Coworker isn&apos;t the right play (and that&apos;s OK)
         </h3>
         <p className="text-sm text-muted-foreground mb-4">
-          Coworker respects user roles and permissions — it&apos;s not unfettered
+          Coworker respects user roles and permissions, it&apos;s not unfettered
           access. But some orgs haven&apos;t fully implemented those controls through
           profiles, permission sets, and field-level security. Until that
           foundation is solid, Coworker may expose more than intended.

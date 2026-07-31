@@ -19,7 +19,7 @@ const objections = [
     icon: Settings,
     objection: '"Can we configure Coworker to understand our specific Salesforce org?"',
     response:
-      "Yes, in two ways: (1) You may not even need to — Coworker uses a ReAct framework that reasons and then takes actions. It automatically assesses all your Salesforce data and underlying metadata to find responses that best match user intent. It understands your org structure out of the box. (2) Coworker Skills are coming — admins will be able to configure custom skills to guide Coworker for common tasks and give tailored answers specific to your business processes.",
+      "Yes, in two ways: (1) You may not need to. Coworker uses a ReAct framework that reasons and then takes actions. It automatically assesses all your Salesforce data and underlying metadata to find responses that match user intent. It understands your org structure out of the box. (2) Coworker Skills are coming. Admins will be able to configure custom skills to guide Coworker for common tasks and give tailored answers specific to your business processes.",
   },
   {
     icon: Lock,
@@ -31,7 +31,7 @@ const objections = [
     icon: Zap,
     objection: '"We already built Employee Agents — did we waste our time?"',
     response:
-      "Absolutely not. Coworker can serve as the master orchestrator behind Employee Agents. Employee Agents handle prescribed on-rails AI tasks that Coworker, being LLM-based, you may not want it to handle directly. Instead, Coworker delegates to Employee Agents to handle those on-rails tasks. Employee Agents are the specialized muscles. Coworker is the brain that knows when to flex them. Without Employee Agents, Coworker can find and summarize but can't take action. You didn't waste time — you built the foundation that makes Coworker truly powerful.",
+      "No. Coworker can be the master orchestrator behind Employee Agents. Employee Agents handle prescribed on-rails AI tasks that Coworker, being LLM-based, you may not want it to handle directly. Coworker delegates to Employee Agents to handle those on-rails tasks. Employee Agents are the specialized muscles. Coworker is the brain that knows when to use them. Without Employee Agents, Coworker can find and summarize but can't take action. You didn't waste time. You built the foundation that makes Coworker powerful.",
   },
   {
     icon: AlertCircle,
@@ -61,12 +61,12 @@ const objections = [
 export function SectionObjections() {
   return (
     <SectionWrapper id="objections" alternate>
-      <h2 className="text-3xl font-bold mb-2">Common Objections & Responses</h2>
+      <h2 className="text-3xl font-bold mb-2">Common objections & responses</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
         Last updated: July 30, 2026
       </p>
       <p className="text-muted-foreground mb-8">
-        The pushback you'll hear in the field — and how to reframe it.
+        The pushback you'll hear in the field and how to reframe it.
       </p>
 
       <div className="space-y-4">

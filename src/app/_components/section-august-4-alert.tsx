@@ -8,13 +8,13 @@ export function SectionAugust4Alert() {
       <Alert className="border-blue-600 bg-blue-50/50 [&>svg]:text-blue-600 mb-6">
         <AlertCircle className="h-5 w-5" />
         <AlertTitle className="text-lg font-bold">
-          Auto-Enablement Begins August 4, 2026
+          Auto-enablement begins August 4, 2026
         </AlertTitle>
         <AlertDescription className="text-sm mt-2">
           <p className="mb-3">
             Agentforce Coworker will be automatically enabled starting{" "}
             <strong>August 4–11, 2026</strong> for eligible customer orgs. This
-            document helps you communicate what's happening, who's affected, and
+            document explains what's happening, who's affected, and
             how customers can opt out if needed.
           </p>
         </AlertDescription>
@@ -25,7 +25,7 @@ export function SectionAugust4Alert() {
         <div className="border rounded-lg p-6 bg-green-50/30">
           <div className="flex items-start gap-3 mb-3">
             <CheckCircle className="h-5 w-5 text-green-600 mt-0.5" />
-            <h3 className="font-semibold text-base">Who Gets Auto-Enabled</h3>
+            <h3 className="font-semibold text-base">Who gets auto-enabled</h3>
           </div>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>
@@ -51,7 +51,7 @@ export function SectionAugust4Alert() {
         <div className="border rounded-lg p-6 bg-red-50/30">
           <div className="flex items-start gap-3 mb-3">
             <XCircle className="h-5 w-5 text-red-600 mt-0.5" />
-            <h3 className="font-semibold text-base">Excluded Orgs</h3>
+            <h3 className="font-semibold text-base">Excluded orgs</h3>
           </div>
           <ul className="space-y-2 text-sm text-muted-foreground">
             <li>❌ Generative AI disabled orgs</li>
@@ -66,7 +66,7 @@ export function SectionAugust4Alert() {
       <div className="border rounded-lg p-6 bg-amber-50/30 mb-6">
         <div className="flex items-start gap-3 mb-3">
           <Info className="h-5 w-5 text-amber-600 mt-0.5" />
-          <h3 className="font-semibold text-base">Opt-Out Options</h3>
+          <h3 className="font-semibold text-base">Opt-out options</h3>
         </div>
         <div className="space-y-3 text-sm text-muted-foreground">
           <div>
@@ -96,20 +96,20 @@ export function SectionAugust4Alert() {
       <Alert className="border-orange-600 bg-orange-50/50 [&>svg]:text-orange-600">
         <AlertCircle className="h-5 w-5" />
         <AlertTitle className="font-semibold">
-          Important: Data Residency Requirements
+          Important: data residency requirements
         </AlertTitle>
         <AlertDescription className="text-sm mt-1">
           Customers with data residency requirements (regulated industries
-          needing Japan-region data stay) should be proactively advised to opt
+          needing Japan-region data stay) should be advised to opt
           out before August 4. There's currently a potential US-region fallback
-          during outages/overload. A toggle to disable fallback is in
+          during outages or overload. A toggle to disable fallback is in
           development with no ETA.
         </AlertDescription>
       </Alert>
 
       {/* Resources */}
       <div className="mt-6 p-4 bg-muted/30 rounded-lg">
-        <h4 className="font-semibold text-sm mb-2">Customer-Facing Resources</h4>
+        <h4 className="font-semibold text-sm mb-2">Customer-facing resources</h4>
         <ul className="space-y-1 text-sm">
           <li>
             <a

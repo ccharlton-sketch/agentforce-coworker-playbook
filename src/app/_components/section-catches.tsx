@@ -27,37 +27,37 @@ const catches = [
   },
   {
     icon: Clock,
-    title: "Autonomy is Oversold",
+    title: "Autonomy is oversold",
     description:
-      "\"Works while you're away\" is future state. The Plan & Act UX is awkward — toggling between records isn't smooth. Without Employee Agents, it's read-only.",
+      "\"Works while you're away\" is future state. The Plan & Act UX is awkward. Toggling between records isn't smooth. Without Employee Agents, it's read-only.",
     severity: "medium" as const,
   },
   {
     icon: Eye,
-    title: "Observability — Coming via Agentforce Observability",
+    title: "Observability coming via Agentforce Observability",
     description:
-      "Coworker will be built into Agentforce Observability, which is a positive. However, we don't yet know what that experience looks like in practice. Customers who need detailed audit trails or usage analytics will ask — acknowledge it's coming but set expectations that details are TBD.",
+      "Coworker will be built into Agentforce Observability. We don't yet know what that experience looks like in practice. Customers who need detailed audit trails or usage analytics will ask. Acknowledge it's coming but set expectations that details are TBD.",
     severity: "medium" as const,
   },
   {
     icon: DollarSign,
-    title: "Cost Risk for Non-A1/A4X",
+    title: "Cost risk for non-A1/A4X",
     description:
-      "Pricing will be based on flex credit/token usage rather than per-action, which gives more flexibility. But flex-only customers can still blow through consumption quickly. Use Coworker as a driver toward committed SKUs, not a standalone play.",
+      "Pricing will be based on flex credit/token usage rather than per-action, which gives more flexibility. But flex-only customers can still blow through consumption quickly. Use Coworker to drive toward committed SKUs, not as a standalone play.",
     severity: "medium" as const,
   },
   {
     icon: DollarSign,
-    title: "Data Cloud DMO Setup Has Upfront Consumption Cost",
+    title: "Data Cloud DMO setup has upfront consumption cost",
     description:
-      "While Data Cloud querying through Coworker is unmetered for A1E/A4X, setting up and attaching a Data Cloud DMO (Data Model Object) triggers an upfront consumption cost. This is due to creating a search index on that DMO, which processes and indexes the data to make it searchable by Coworker. This includes zero-copy data from sources like Databricks, Snowflake, etc. Set expectations that initial indexing will consume credits even on unmetered SKUs.",
+      "While Data Cloud querying through Coworker is unmetered for A1E/A4X, setting up and attaching a Data Cloud DMO (Data Model Object) triggers an upfront consumption cost. This is because creating a search index on that DMO processes and indexes the data to make it searchable by Coworker. This includes zero-copy data from sources like Databricks and Snowflake. Set expectations that initial indexing will consume credits even on unmetered SKUs.",
     severity: "medium" as const,
   },
   {
     icon: AlertTriangle,
-    title: "Context Window & LLM Details",
+    title: "Context window & LLM details",
     description:
-      "Coworker is believed to have a 200k token context window and runs on Claude as the underlying LLM. There is currently no ability to adjust or swap the LLM behind the scenes, though it is roadmapped. Our team needs awareness of these constraints to consult and troubleshoot properly.",
+      "Coworker is believed to have a 200k token context window and runs on Claude as the underlying LLM. There is currently no ability to adjust or swap the LLM, though it is roadmapped. Our team needs awareness of these constraints to consult and troubleshoot properly.",
     severity: "low" as const,
   },
   {
@@ -78,13 +78,13 @@ const severityStyles = {
 export function SectionCatches() {
   return (
     <SectionWrapper id="catches" alternate>
-      <h2 className="text-3xl font-bold mb-2">Catches & Gotchas</h2>
+      <h2 className="text-3xl font-bold mb-2">Catches & gotchas</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
         Last updated: July 30, 2026
       </p>
       <p className="text-muted-foreground mb-8">
-        What to know before the customer conversation. Set expectations early —
-        don&apos;t let the deck oversell.
+        What to know before the customer conversation. Set expectations early.
+        Don&apos;t let the deck oversell.
       </p>
 
       <div className="space-y-4">

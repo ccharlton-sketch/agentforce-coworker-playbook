@@ -57,7 +57,7 @@ export function SectionRoadmap() {
         Last updated: July 30, 2026
       </p>
       <p className="text-muted-foreground mb-8">
-        What&apos;s real today vs. what&apos;s coming. Set customer expectations accordingly.
+        What&apos;s real today vs. what&apos;s coming.
       </p>
 
       <div className="max-w-2xl">
@@ -71,12 +71,12 @@ export function SectionRoadmap() {
         <div className="p-6 rounded-lg border bg-[#0176D3]/5">
           <h4 className="font-semibold mb-2">Included in A4X / A1E</h4>
           <p className="text-sm text-muted-foreground">
-            Comes with unlimited usage of Agentforce and Data 360 Querying
+            Unlimited usage of Agentforce and Data 360 Querying
             credits.
           </p>
         </div>
         <div className="p-6 rounded-lg border bg-muted/30">
-          <h4 className="font-semibold mb-2">Flex Credits (Top Up)</h4>
+          <h4 className="font-semibold mb-2">Flex credits (top up)</h4>
           <p className="text-sm text-muted-foreground">
             Usage-based metering of Agentforce and Data 360 Querying. For
             customers not on A4X / A1E.

@@ -33,12 +33,12 @@ const benefits = [
 export function SectionBenefits() {
   return (
     <SectionWrapper id="benefits">
-      <h2 className="text-3xl font-bold mb-2">Why Customers Should Care</h2>
+      <h2 className="text-3xl font-bold mb-2">Why customers should care</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
         Last updated: July 30, 2026
       </p>
       <p className="text-muted-foreground mb-10">
-        The expectation has shifted — and Coworker meets it.
+        The expectation has shifted. Coworker meets it.
       </p>
 
       {/* Stats row */}
@@ -59,10 +59,10 @@ export function SectionBenefits() {
                 <Sparkles className="h-6 w-6 text-[#0176D3]" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-2">The New Expectation</h3>
-                <p className="text-muted-foreground">
-                  Users are now conditioned by ChatGPT, Claude, Gemini, and other consumer AI tools.
-                  When they ask a question, want to resolve something, or need to do something, they <strong>expect the tool to try</strong> — not an error message, not "I can't help with that." The tool gives its best answer. That's the bar.
+                <h3 className="font-semibold text-lg mb-2">The new expectation</h3>
+<parameter name="text-muted-foreground">
+                  Users are conditioned by ChatGPT, Claude, Gemini, and other consumer AI tools.
+                  When they ask a question or want to resolve something, they <strong>expect the tool to try</strong>, not throw an error message or say "I can't help with that." The tool gives its best answer. That's the bar.
                 </p>
               </div>
             </div>
@@ -76,13 +76,12 @@ export function SectionBenefits() {
                 <Target className="h-6 w-6 text-[#0176D3]" />
               </div>
               <div>
-                <h3 className="font-semibold text-lg mb-2">Coworker Is Your First Agent</h3>
+                <h3 className="font-semibold text-lg mb-2">Coworker is your first agent</h3>
                 <p className="text-muted-foreground">
                   Coworker surfaces insights and information from your Salesforce org, Google Drive, Slack,
-                  and more. It gives its first best shot at understanding the intent and what the user is
-                  actually looking for. It's the conversational layer that brings everything together —
-                  without requiring users to know where data lives or how to query it. When it comes to prescriptive,
-                  on-rails business process tasks, you still have Employee Agents for those.
+                  and more. It takes its best shot at understanding what the user wants.
+                  It's the conversational layer that brings everything together without requiring users to know where data lives or how to query it. For prescriptive,
+                  on-rails business process tasks, you still have Employee Agents.
                 </p>
               </div>
             </div>
@@ -113,9 +112,9 @@ export function SectionBenefits() {
 
       {/* Example utterances */}
       <div>
-        <h3 className="font-semibold text-lg mb-4">Example Use Cases</h3>
+        <h3 className="font-semibold text-lg mb-4">Example use cases</h3>
         <p className="text-sm text-muted-foreground mb-4">
-          Real questions users can ask — all of this data lives in Salesforce but now has a conversational interface.
+          Real questions users can ask. All of this data lives in Salesforce but now has a conversational interface.
         </p>
         <div className="space-y-3">
           <div className="p-4 rounded-lg border bg-muted/30">

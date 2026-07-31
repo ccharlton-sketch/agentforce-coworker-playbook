@@ -71,10 +71,10 @@ const decisions = [
 export function SectionAccountTargets() {
   return (
     <SectionWrapper id="account-targets" alternate>
-      <h2 className="text-3xl font-bold mb-2">Account Targets</h2>
+      <h2 className="text-3xl font-bold mb-2">Account targets</h2>
       <p className="text-muted-foreground mb-8">
-        Everyone with the right SKU is fair game — but priority matters.
-        Here&apos;s who to go to first.
+        Everyone with the right SKU is fair game, but priority matters.
+        Who to go to first.
       </p>
 
       {/* Tier Cards */}
@@ -86,7 +86,7 @@ export function SectionAccountTargets() {
 
       {/* Decision Framework */}
       <div>
-        <h3 className="text-xl font-semibold mb-4">Decision Framework</h3>
+        <h3 className="text-xl font-semibold mb-4">Decision framework</h3>
         <div className="rounded-lg border overflow-hidden">
           <Table>
             <TableHeader>
