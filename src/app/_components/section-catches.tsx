@@ -20,13 +20,6 @@ type CatchItem = {
 
 const catches: CatchItem[] = [
   {
-    icon: FlaskConical,
-    title: "Beta Product",
-    description:
-      "Outages and changes should be expected. Customers cannot make buying decisions based on beta products. Set this expectation clearly upfront.",
-    severity: "high" as const,
-  },
-  {
     icon: Ban,
     title: "No Record Updates or Web Search (Yet)",
     description: (

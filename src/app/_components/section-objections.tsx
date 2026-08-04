@@ -1,6 +1,6 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { SectionWrapper } from "./section-wrapper";
-import { AlertCircle, Settings, DollarSign, Lock, MessageSquare, Search, Zap, Edit, Network, BarChart } from "lucide-react";
+import { Settings, DollarSign, Lock, MessageSquare, Search, Zap, Edit, Network, BarChart } from "lucide-react";
 
 const objections = [
   {
@@ -45,12 +45,6 @@ const objections = [
     objection: '"We already built Employee Agents — did we waste our time?"',
     response:
       "No. Coworker can be the master orchestrator behind Employee Agents. Employee Agents handle prescribed on-rails AI tasks that Coworker, being LLM-based, you may not want it to handle directly. Coworker delegates to Employee Agents to handle those on-rails tasks. Employee Agents are the specialized muscles. Coworker is the brain that knows when to use them. Without Employee Agents, Coworker can find and summarize but can't take action. You didn't waste time. You built the foundation that makes Coworker powerful.",
-  },
-  {
-    icon: AlertCircle,
-    objection: '"It\'s still in beta — should we just wait for GA?"',
-    response:
-      "The beta tag doesn't mean it's unstable. Coworker is live and fully capable — customers should not experience breakages or problems with the standard Coworker/enterprise search experience. What's coming in GA are more surfaces (Teams, web portals, desktop app) and additional connectors. At its core, the product is working far better than you'd expect from a typical beta. Auto-enablement starts August 10, 2026, so now is the time to turn it on, train champions, and build internal adoption.",
   },
   {
     icon: BarChart,
