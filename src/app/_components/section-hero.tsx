@@ -39,7 +39,7 @@ export function SectionHero() {
           <span className="text-white/30">|</span>
           <span>Internal only</span>
           <span className="text-white/30">|</span>
-          <span>Updated July 2026</span>
+          <span>Updated August 4, 2026</span>
         </div>
       </div>
     </section>

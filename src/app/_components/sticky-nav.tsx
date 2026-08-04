@@ -5,7 +5,7 @@ import { useState } from "react";
 
 const sections = [
   { id: "hero", label: "Overview" },
-  { id: "august-4-alert", label: "August 4 Auto-Enable" },
+  { id: "august-4-alert", label: "August 10 Auto-Enable" },
   { id: "employee-vs-coworker", label: "Agents vs. Coworker" },
   { id: "account-targets", label: "Account Targets" },
   { id: "benefits", label: "Why Customers Care" },

@@ -35,7 +35,7 @@ export function SectionBenefits() {
     <SectionWrapper id="benefits">
       <h2 className="text-3xl font-bold mb-2">Why customers should care</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: July 30, 2026
+        Last updated: August 4, 2026
       </p>
       <p className="text-muted-foreground mb-10">
         The expectation has shifted. Coworker meets it.

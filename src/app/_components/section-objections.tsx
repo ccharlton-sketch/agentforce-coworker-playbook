@@ -6,8 +6,21 @@ const objections = [
   {
     icon: Edit,
     objection: '"Does Coworker take action and update records?"',
-    response:
-      "Out of the box, Coworker is read-only for all users — it searches and surfaces information but doesn't modify records. You can request to join a pilot that enables Coworker to take actions and update records on behalf of users (while still respecting their profiles and permissions). Most customers don't want this at first — they want enterprise search for their Salesforce org. But it's an option if you need it.",
+    response: (
+      <>
+        Out of the box, Coworker is read-only for all users — it searches and
+        surfaces information but doesn&apos;t modify records. Most customers
+        don&apos;t want this at first; they want enterprise search for their
+        Salesforce org.*
+        <br />
+        <span className="text-xs italic">
+          *Currently, there is a pilot that customers can sign up for to
+          give Coworker CRUD access — enabling it to take actions and update
+          records on a user&apos;s behalf while still respecting their
+          profiles and permissions.
+        </span>
+      </>
+    ),
   },
   {
     icon: Network,
@@ -37,7 +50,7 @@ const objections = [
     icon: AlertCircle,
     objection: '"It\'s still in beta — should we just wait for GA?"',
     response:
-      "The beta tag doesn't mean it's unstable. Coworker is live and fully capable — customers should not experience breakages or problems with the standard Coworker/enterprise search experience. What's coming in GA are more surfaces (Teams, web portals, desktop app) and additional connectors. At its core, the product is working far better than you'd expect from a typical beta. Auto-enablement starts August 4, 2026, so now is the time to turn it on, train champions, and build internal adoption.",
+      "The beta tag doesn't mean it's unstable. Coworker is live and fully capable — customers should not experience breakages or problems with the standard Coworker/enterprise search experience. What's coming in GA are more surfaces (Teams, web portals, desktop app) and additional connectors. At its core, the product is working far better than you'd expect from a typical beta. Auto-enablement starts August 10, 2026, so now is the time to turn it on, train champions, and build internal adoption.",
   },
   {
     icon: BarChart,
@@ -63,7 +76,7 @@ export function SectionObjections() {
     <SectionWrapper id="objections" alternate>
       <h2 className="text-3xl font-bold mb-2">Common objections & responses</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: July 30, 2026
+        Last updated: August 4, 2026
       </p>
       <p className="text-muted-foreground mb-8">
         The pushback you'll hear in the field and how to reframe it.

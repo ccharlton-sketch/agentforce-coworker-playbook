@@ -3,49 +3,60 @@ import { TimelineItem } from "./timeline-item";
 
 const roadmapData = [
   {
-    date: "Now",
+    date: "Now (GA — Aug 2026)",
     status: "available" as const,
-    title: "Available Today (Beta)",
+    title: "Available Today (GA)",
     items: [
-      "Slack + CRM Lightning + Service Cloud Apps",
-      "270+ Data 360 connectors",
+      "Salesforce CRM, Slack, and Service Cloud Apps",
+      "270+ Data 360 / Enterprise Sources",
       "Permission-aware connectors (Identity, Governance, Data Ingestion)",
-      "Multi-Agent: Agentforce Agents",
+      "Open-ended Q&A",
+      "Create & Update CRM Records*",
+      "Delegate to Agentforce Agents",
       "Employee 360 Identity",
       "Intelligent Context + Enriched Metadata Graph",
       "Multi-step reasoning",
       "Prompt suggestions",
+      "Salesforce Global Search",
+      "Salesforce Mobile App",
+      "Salesforce Governance",
+      "Consumption in Digital Wallet",
       "Microsoft Teams (Pilot) — Nominate customers to surface Coworker in Teams and query Salesforce data + delegate to agents without leaving Teams",
     ],
+    footnote: "*Slowly rolling out feature.",
   },
   {
-    date: "Aug 2026",
+    date: "Sept 2026 (Dreamforce)",
     status: "upcoming" as const,
-    title: "August 2026 (Potential/Slated)",
+    title: "Coming Next — Dreamforce / September 2026",
     items: [
-      "Web / Experience portals",
-      "Web Search",
-      "Federated Search Tools",
-      "Notebooks",
-      "Data QnA",
-      "Employee Activity Graph",
-      "Daily Digest (proactive insights delivered to you)",
+      "History",
+      "Google Workspace",
+      "Bring your personal context",
+      "Agentforce Skills",
+      "Schedule Tasks — AgentIQ",
+      "Microsoft Teams — Ground Coworker with Teams conversations and files (separate from the pilot above)",
+      "Native Mobile App",
+      "Headless — APIs and MCP",
+      "Coworker Insights & Observability",
     ],
+    footnote: "*Subject to change.",
   },
   {
-    date: "Oct 2026 (Dreamforce)",
+    date: "Dec 2026",
     status: "future" as const,
-    title: "Dreamforce / October 2026",
+    title: "Future Direction — December 2026",
     items: [
-      "Desktop app",
-      "MCP tools",
-      "Multi-Agent: 3P Agents",
-      "Knowledge Graph",
-      "Ambient Insights (User, Page & App Context)",
-      "Co-Work (collaborative AI sessions)",
-      "Self-learn tasks",
-      "Microsoft Teams — Ground Coworker with Teams conversations and files (separate from the pilot above)",
+      "Microsoft 365 Sources",
+      "Web Search",
+      "MCP-based Connections",
+      "Create Salesforce Apps / Pages",
+      "Proactive Insights",
+      "Daily Digests",
+      "Experience Sites",
+      "Agentforce Testing Center",
     ],
+    footnote: "*Subject to change.",
   },
 ];
 
@@ -54,7 +65,7 @@ export function SectionRoadmap() {
     <SectionWrapper id="roadmap" alternate>
       <h2 className="text-3xl font-bold mb-2">Roadmap</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: July 30, 2026
+        Last updated: August 4, 2026
       </p>
       <p className="text-muted-foreground mb-8">
         What&apos;s real today vs. what&apos;s coming.

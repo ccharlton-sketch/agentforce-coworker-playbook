@@ -3,6 +3,7 @@ interface TimelineItemProps {
   status: "available" | "upcoming" | "future";
   title: string;
   items: string[];
+  footnote?: string;
 }
 
 const statusStyles = {
@@ -26,7 +27,7 @@ const statusStyles = {
   },
 };
 
-export function TimelineItem({ date, status, title, items }: TimelineItemProps) {
+export function TimelineItem({ date, status, title, items, footnote }: TimelineItemProps) {
   const styles = statusStyles[status];
 
   return (
@@ -60,6 +61,11 @@ export function TimelineItem({ date, status, title, items }: TimelineItemProps) 
             </li>
           ))}
         </ul>
+        {footnote && (
+          <p className="text-xs italic text-muted-foreground/70 pt-1">
+            {footnote}
+          </p>
+        )}
       </div>
     </div>
   );

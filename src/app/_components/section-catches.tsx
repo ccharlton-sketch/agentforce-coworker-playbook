@@ -1,3 +1,4 @@
+import type { ReactNode } from "react";
 import { Alert, AlertDescription, AlertTitle } from "@/components/ui/alert";
 import { SectionWrapper } from "./section-wrapper";
 import {
@@ -10,7 +11,14 @@ import {
   Monitor,
 } from "lucide-react";
 
-const catches = [
+type CatchItem = {
+  icon: typeof FlaskConical;
+  title: string;
+  description: ReactNode;
+  severity: "high" | "medium" | "low";
+};
+
+const catches: CatchItem[] = [
   {
     icon: FlaskConical,
     title: "Beta Product",
@@ -21,8 +29,21 @@ const catches = [
   {
     icon: Ban,
     title: "No Record Updates or Web Search (Yet)",
-    description:
-      "Actions and record updates are locked behind Employee Agents callable from Coworker. Web search is coming but not available today.",
+    description: (
+      <>
+        Actions and record updates are locked behind Employee Agents
+        callable from Coworker.*
+        <br />
+        <span className="text-xs italic">
+          *Coworker CRUD capabilities is in pilot that customers can sign up
+          for.
+        </span>
+        <br />
+        Web search is coming but not available today — in the meantime,
+        customers can use an Employee Agent to handle web search
+        capability.
+      </>
+    ),
     severity: "high" as const,
   },
   {
@@ -80,7 +101,7 @@ export function SectionCatches() {
     <SectionWrapper id="catches" alternate>
       <h2 className="text-3xl font-bold mb-2">Catches & gotchas</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: July 30, 2026
+        Last updated: August 4, 2026
       </p>
       <p className="text-muted-foreground mb-8">
         What to know before the customer conversation. Set expectations early.

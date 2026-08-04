@@ -8,12 +8,12 @@ export function SectionAugust4Alert() {
       <Alert className="border-blue-600 bg-blue-50/50 [&>svg]:text-blue-600 mb-6">
         <AlertCircle className="h-5 w-5" />
         <AlertTitle className="text-lg font-bold">
-          Auto-enablement begins August 4, 2026
+          Auto-enablement begins August 10, 2026
         </AlertTitle>
         <AlertDescription className="text-sm mt-2">
           <p className="mb-3">
             Agentforce Coworker will be automatically enabled starting{" "}
-            <strong>August 4–11, 2026</strong> for eligible customer orgs. This
+            <strong>August 10–17, 2026</strong> for eligible customer orgs. This
             document explains what's happening, who's affected, and
             how customers can opt out if needed.
           </p>
@@ -71,7 +71,7 @@ export function SectionAugust4Alert() {
         <div className="space-y-3 text-sm text-muted-foreground">
           <div>
             <p className="font-semibold text-foreground mb-1">
-              Before August 4:
+              Before August 10:
             </p>
             <p>
               Use the opt-out link in the admin notification email, or go to{" "}
@@ -81,7 +81,7 @@ export function SectionAugust4Alert() {
             </p>
           </div>
           <div>
-            <p className="font-semibold text-foreground mb-1">After August 4:</p>
+            <p className="font-semibold text-foreground mb-1">After August 10:</p>
             <p>
               Toggle it on/off anytime from{" "}
               <code className="bg-white px-1.5 py-0.5 rounded text-xs">
@@ -101,7 +101,7 @@ export function SectionAugust4Alert() {
         <AlertDescription className="text-sm mt-1">
           Customers with data residency requirements (regulated industries
           needing Japan-region data stay) should be advised to opt
-          out before August 4. There's currently a potential US-region fallback
+          out before August 10. There's currently a potential US-region fallback
           during outages or overload. A toggle to disable fallback is in
           development with no ETA.
         </AlertDescription>
@@ -118,7 +118,7 @@ export function SectionAugust4Alert() {
               rel="noopener noreferrer"
               className="text-blue-600 hover:underline"
             >
-              ❓ August 4 Auto-Enablement FAQ
+              ❓ August 10 Auto-Enablement FAQ
             </a>
           </li>
           <li>
@@ -149,6 +149,17 @@ export function SectionAugust4Alert() {
               className="text-blue-600 hover:underline"
             >
               📊 Full Pitch Deck
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://help.salesforce.com/s/articleView?language=en_US&id=ai.generative_ai_usage_unmetered_considerations.htm&type=5"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              🔓 Unmetered Usage Considerations — confirm users have the
+              permission assigned to stay unmetered
             </a>
           </li>
         </ul>
