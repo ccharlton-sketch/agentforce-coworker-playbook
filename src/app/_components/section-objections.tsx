@@ -11,7 +11,10 @@ const objections = [
         Out of the box, Coworker is read-only for all users — it searches and
         surfaces information but doesn&apos;t modify records. Most customers
         don&apos;t want this at first; they want enterprise search for their
-        Salesforce org.*
+        Salesforce org. Record update capability is rolling out over the
+        next month and a half — Coworker will confirm with the user on each
+        record update, so users can&apos;t accidentally update thousands of
+        records at once and risk data quality loss.*
         <br />
         <span className="text-xs italic">
           *Currently, there is a pilot that customers can sign up for to
@@ -70,7 +73,7 @@ export function SectionObjections() {
     <SectionWrapper id="objections" alternate>
       <h2 className="text-3xl font-bold mb-2">Common objections & responses</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: August 4, 2026
+        Last updated: August 10, 2026
       </p>
       <p className="text-muted-foreground mb-8">
         The pushback you'll hear in the field and how to reframe it.

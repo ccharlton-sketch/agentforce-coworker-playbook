@@ -1,5 +1,6 @@
 import { SectionWrapper } from "./section-wrapper";
 import { TimelineItem } from "./timeline-item";
+import { Lock } from "lucide-react";
 
 const roadmapData = [
   {
@@ -65,8 +66,41 @@ export function SectionRoadmap() {
     <SectionWrapper id="roadmap" alternate>
       <h2 className="text-3xl font-bold mb-2">Roadmap</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: August 4, 2026
+        Last updated: August 10, 2026
       </p>
+
+      {/* Internal-only resources */}
+      <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg max-w-2xl">
+        <div className="flex items-center gap-2 mb-2">
+          <Lock className="h-4 w-4 text-amber-700" />
+          <h4 className="font-semibold text-sm text-amber-800">
+            Internal only — do not share with customers
+          </h4>
+        </div>
+        <ul className="space-y-1 text-sm">
+          <li>
+            <a
+              href="https://docs.google.com/presentation/d/15LH__5fFe9-nZHwDpeSbnLAr7cfxWgoHQWpDlms9ThE/edit?slide=id.g3f5764a8378_0_3560#slide=id.g3f5764a8378_0_3560"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              📊 Upcoming Coworker Releases (slide deck)
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://docs.google.com/spreadsheets/d/1E4Il4Z8oYMi6NL5iH8Y4j_Yj0XVNYA1kpeA86SUDtY8/edit?gid=0#gid=0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-blue-600 hover:underline"
+            >
+              📋 Coworker Global Product Priority List (roadmap sheet)
+            </a>
+          </li>
+        </ul>
+      </div>
+
       <p className="text-muted-foreground mb-8">
         What&apos;s real today vs. what&apos;s coming.
       </p>

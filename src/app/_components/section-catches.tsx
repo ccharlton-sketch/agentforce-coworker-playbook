@@ -94,7 +94,7 @@ export function SectionCatches() {
     <SectionWrapper id="catches" alternate>
       <h2 className="text-3xl font-bold mb-2">Catches & gotchas</h2>
       <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: August 4, 2026
+        Last updated: August 10, 2026
       </p>
       <p className="text-muted-foreground mb-8">
         What to know before the customer conversation. Set expectations early.

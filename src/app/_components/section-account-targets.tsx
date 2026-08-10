@@ -12,7 +12,7 @@ import { TierCard } from "./tier-card";
 const tiers = [
   {
     tier: 1,
-    title: "A1 Sales / A4 Sales",
+    title: "A1 Sales / A4 Sales / AELAs",
     subtitle: "Go now",
     description:
       "These customers bought Agentforce looking for a \"Conversational Experience for Salesforce\" and started with Employee Agents (on-rails, guided). Coworker delivers the open-ended conversational layer they've been asking for.",
@@ -21,10 +21,10 @@ const tiers = [
   },
   {
     tier: 2,
-    title: "Pre-commits",
+    title: "Pre-commits / Flex Credit Purchasers",
     subtitle: "Handle with care",
     description:
-      "Enable Coworker, but the consumption-only conversation needs delicacy. These users are still exploring the platform — Coworker can show what's possible and shift the conversation toward value.",
+      "Pre-commit customers, plus those who have pre-purchased or already purchased Flex credits. Enable Coworker, but the consumption-only conversation needs delicacy. These users are still exploring the platform — Coworker can show what's possible and shift the conversation toward value.",
     action:
       "Enable carefully. Address consumption implications upfront.",
     color: "teal" as const,
@@ -40,7 +40,7 @@ const tiers = [
   },
   {
     tier: 4,
-    title: "Flex-only Customers",
+    title: "Foundations Customers",
     subtitle: "Introduce with caution",
     description:
       "Show them Coworker, but be aware of consumption costs. These customers could have trouble keeping costs under control without a committed SKU.",
@@ -63,7 +63,7 @@ const decisions = [
     recommendation: "Employee Agents OR Coworker",
   },
   {
-    situation: "Flex-only customers",
+    situation: "Foundations customers",
     recommendation: "Introduce Coworker → drive toward A1/A4X",
   },
 ];
