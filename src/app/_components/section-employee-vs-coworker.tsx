@@ -51,6 +51,11 @@ export function SectionEmployeeVsCoworker() {
               </li>
               <li className="flex items-start gap-2">
                 <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#0176D3] shrink-0" />
+                Can create, read, update &amp; delete records directly, once
+                an admin turns on Coworker Actions
+              </li>
+              <li className="flex items-start gap-2">
+                <span className="mt-1 h-1.5 w-1.5 rounded-full bg-[#0176D3] shrink-0" />
                 One interface across Lightning, Slack, Teams, Mobile
               </li>
               <li className="flex items-start gap-2">
@@ -103,15 +108,18 @@ export function SectionEmployeeVsCoworker() {
         <h3 className="font-semibold mb-3">The key insight for customers</h3>
         <div className="space-y-3 text-sm text-muted-foreground">
           <p>
-            <strong className="text-foreground">Without Employee Agents:</strong>{" "}
-            Coworker is search plus summarization (Find + Catch Up). It can
-            answer questions and surface information, but can&apos;t take action.
+            <strong className="text-foreground">Coworker on its own:</strong>{" "}
+            Coworker is search plus summarization (Find + Catch Up), plus
+            basic record CRUD (create, read, update, delete) once an admin
+            turns on the Coworker Actions setting — still respecting each
+            user&apos;s profile and permissions.
           </p>
           <p>
             <strong className="text-foreground">With Employee Agents:</strong>{" "}
             Coworker can complete the full loop (Find + Catch Up + Plan &
-            Act). Actions and record updates are locked behind Employee Agents
-            that Coworker calls.
+            Act) for anything beyond simple CRUD. Deterministic, multi-step
+            business processes and custom actions are still built and run
+            through Employee Agents that Coworker calls.
           </p>
           <p className="pt-2 border-t text-foreground font-medium">
             &ldquo;You didn&apos;t waste time building Employee Agents. You built the

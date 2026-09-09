@@ -21,29 +21,47 @@ type CatchItem = {
 const catches: CatchItem[] = [
   {
     icon: Ban,
-    title: "No Record Updates or Web Search (Yet)",
+    title: "Web Search Not Available (Yet)",
     description: (
       <>
-        Actions and record updates are locked behind Employee Agents
-        callable from Coworker.*
-        <br />
-        <span className="text-xs italic">
-          *Coworker CRUD capabilities is in pilot that customers can sign up
-          for.
-        </span>
-        <br />
         Web search is coming but not available today — in the meantime,
         customers can use an Employee Agent to handle web search
         capability.
       </>
     ),
-    severity: "high" as const,
+    severity: "medium" as const,
+  },
+  {
+    icon: Ban,
+    title: "CRUD is GA but off by default",
+    description: (
+      <>
+        Coworker can now create, read, update, and delete records directly
+        — that&apos;s GA, not pilot anymore. But it&apos;s off by default.
+        An admin has to enable the Coworker Actions setting first, and even
+        then Coworker still respects each user&apos;s existing profile and
+        permission access.
+        <br />
+        <span className="text-xs italic">
+          <a
+            href="https://help.salesforce.com/s/articleView?id=release-notes.rn_general_agentforce_coworker_create_update_records.htm&release=264&type=5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            See release notes
+          </a>
+          .
+        </span>
+      </>
+    ),
+    severity: "medium" as const,
   },
   {
     icon: Clock,
     title: "Autonomy is oversold",
     description:
-      "\"Works while you're away\" is future state. The Plan & Act UX is awkward. Toggling between records isn't smooth. Without Employee Agents, it's read-only.",
+      "\"Works while you're away\" is future state. The Plan & Act UX is awkward. Toggling between records isn't smooth. Without Coworker Actions enabled (or Employee Agents), it's read-only.",
     severity: "medium" as const,
   },
   {
@@ -93,9 +111,6 @@ export function SectionCatches() {
   return (
     <SectionWrapper id="catches" alternate>
       <h2 className="text-3xl font-bold mb-2">Catches & gotchas</h2>
-      <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: August 10, 2026
-      </p>
       <p className="text-muted-foreground mb-8">
         What to know before the customer conversation. Set expectations early.
         Don&apos;t let the deck oversell.

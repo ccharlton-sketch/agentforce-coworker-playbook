@@ -12,7 +12,7 @@ const roadmapData = [
       "270+ Data 360 / Enterprise Sources",
       "Permission-aware connectors (Identity, Governance, Data Ingestion)",
       "Open-ended Q&A",
-      "Create & Update CRM Records*",
+      "Create, Update & Delete CRM Records (Coworker Actions)*",
       "Delegate to Agentforce Agents",
       "Employee 360 Identity",
       "Intelligent Context + Enriched Metadata Graph",
@@ -24,7 +24,7 @@ const roadmapData = [
       "Consumption in Digital Wallet",
       "Microsoft Teams (Pilot) — Nominate customers to surface Coworker in Teams and query Salesforce data + delegate to agents without leaving Teams",
     ],
-    footnote: "*Slowly rolling out feature.",
+    footnote: "*GA, but off by default — admin must enable the Coworker Actions setting.",
   },
   {
     date: "Sept 2026 (Dreamforce)",
@@ -65,9 +65,6 @@ export function SectionRoadmap() {
   return (
     <SectionWrapper id="roadmap" alternate>
       <h2 className="text-3xl font-bold mb-2">Roadmap</h2>
-      <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: August 10, 2026
-      </p>
 
       {/* Internal-only resources */}
       <div className="mb-6 p-4 bg-amber-50 border border-amber-200 rounded-lg max-w-2xl">

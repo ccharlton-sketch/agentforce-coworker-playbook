@@ -8,19 +8,26 @@ const objections = [
     objection: '"Does Coworker take action and update records?"',
     response: (
       <>
-        Out of the box, Coworker is read-only for all users — it searches and
-        surfaces information but doesn&apos;t modify records. Most customers
-        don&apos;t want this at first; they want enterprise search for their
-        Salesforce org. Record update capability is rolling out over the
-        next month and a half — Coworker will confirm with the user on each
-        record update, so users can&apos;t accidentally update thousands of
-        records at once and risk data quality loss.*
+        By default, Coworker is read-only for all users — it searches and
+        surfaces information but doesn&apos;t modify records. That default
+        already takes each user&apos;s profile and permissions into account.
+        Admins can enable a setting that turns on Coworker Actions, and
+        within Coworker Actions, Coworker gains full CRUD capability
+        (create, read, update, and delete records) on the user&apos;s
+        behalf — still respecting their existing profiles and permissions.
         <br />
         <span className="text-xs italic">
-          *Currently, there is a pilot that customers can sign up for to
-          give Coworker CRUD access — enabling it to take actions and update
-          records on a user&apos;s behalf while still respecting their
-          profiles and permissions.
+          *CRUD is opt-in via the Coworker Actions setting, not on by
+          default.{" "}
+          <a
+            href="https://help.salesforce.com/s/articleView?id=release-notes.rn_general_agentforce_coworker_create_update_records.htm&release=264&type=5"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline"
+          >
+            See release notes
+          </a>
+          .
         </span>
       </>
     ),
@@ -29,7 +36,7 @@ const objections = [
     icon: Network,
     objection: '"What connectors are available? What other systems can we connect?"',
     response:
-      "Out of the box: CRM, Slack, and Google Drive. SharePoint is coming soon. Additionally, Data Cloud acts as a connector — and Data Cloud itself comes with 300+ connectors including Snowflake, Databricks, and more. Plus, Data Cloud's ingestion API can serve as a connector for systems that don't have an out-of-the-box integration.",
+      "Out of the box: CRM and Slack. SharePoint is coming soon. Additionally, Data Cloud acts as a connector — and Data Cloud itself comes with 300+ connectors including Snowflake, Databricks, and more. Plus, Data Cloud's ingestion API can serve as a connector for systems that don't have an out-of-the-box integration.",
   },
   {
     icon: Settings,
@@ -47,7 +54,7 @@ const objections = [
     icon: Zap,
     objection: '"We already built Employee Agents — did we waste our time?"',
     response:
-      "No. Coworker can be the master orchestrator behind Employee Agents. Employee Agents handle prescribed on-rails AI tasks that Coworker, being LLM-based, you may not want it to handle directly. Coworker delegates to Employee Agents to handle those on-rails tasks. Employee Agents are the specialized muscles. Coworker is the brain that knows when to use them. Without Employee Agents, Coworker can find and summarize but can't take action. You didn't waste time. You built the foundation that makes Coworker powerful.",
+      "No. Coworker can be the master orchestrator behind Employee Agents. Employee Agents handle prescribed on-rails AI tasks that Coworker, being LLM-based, you may not want it to handle directly. Coworker delegates to Employee Agents to handle those on-rails tasks. Employee Agents are the specialized muscles. Coworker is the brain that knows when to use them. On its own, Coworker can find, summarize, and — once Coworker Actions is enabled — handle basic record CRUD, but deterministic, multi-step business processes still belong with Employee Agents. You didn't waste time. You built the foundation that makes Coworker powerful.",
   },
   {
     icon: BarChart,
@@ -72,9 +79,6 @@ export function SectionObjections() {
   return (
     <SectionWrapper id="objections" alternate>
       <h2 className="text-3xl font-bold mb-2">Common objections & responses</h2>
-      <p className="text-xs text-muted-foreground/60 mb-2 uppercase tracking-wide">
-        Last updated: August 10, 2026
-      </p>
       <p className="text-muted-foreground mb-8">
         The pushback you'll hear in the field and how to reframe it.
       </p>
